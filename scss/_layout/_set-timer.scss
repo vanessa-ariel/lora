@@ -1,0 +1,20 @@
+.set-timer{
+    text-align: center;
+  &__paragraph{
+    padding: 1rem;
+    border: 2px solid $primary-color;
+    width: 300px;
+    margin: 0 auto 25px;
+  }
+  .input-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .input-hour, .input-min{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+

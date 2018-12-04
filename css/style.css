@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: "Roboto"; }
+
+.container {
+  width: 80vw; }
+
+.navbar {
+  background-color: #8517F3;
+  color: #fff;
+  padding: 1.5rem;
+  width: 100%;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 5vh; }
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto; }
+  .about h1 {
+    font-size: 2.8rem; }
+  .about__paragraph {
+    max-width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem; }
+  .about__illustration {
+    width: 20rem;
+    object-fit: contain; }
+
+.set-timer {
+  text-align: center; }
+  .set-timer__paragraph {
+    padding: 1rem;
+    border: 2px solid #8517F3;
+    width: 300px;
+    margin: 0 auto 25px; }
+  .set-timer .input-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .set-timer .input-hour, .set-timer .input-min {
+    display: flex;
+    flex-direction: column; }
+
+/*# sourceMappingURL=style.css.map */

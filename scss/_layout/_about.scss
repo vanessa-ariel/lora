@@ -17,3 +17,11 @@
     object-fit: contain;
   }
 }
+input[type="number"]{
+  color: transparent;
+  border: none;
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  border-radius: 25px;
+}

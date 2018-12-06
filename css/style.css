@@ -10,6 +10,8 @@ html {
 body {
   font-family: "Roboto";
   font-weight: 300;
+  background: #9f17f3;
+  background: linear-gradient(0deg, rgba(159, 23, 243, 0.35) 0%, #d9b4f0 10%, white 41%);
 }
 
 .container {
@@ -72,7 +74,6 @@ input[type=number] {
   border: none;
   width: 90px;
   height: 90px;
-  background-color: #e2e0dc;
   border-radius: 20px;
 }
 
@@ -102,6 +103,7 @@ input[type=number] {
   font-size: 5rem;
   text-align: center;
   margin-bottom: 10px;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.35);
 }
 
 #hour::-webkit-inner-spin-button, #min::-webkit-outer-spin-button {

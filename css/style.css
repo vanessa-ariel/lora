@@ -128,16 +128,21 @@ input[type=number] {
 .content {
   text-align: center;
 }
+.content h1, .content p {
+  margin-top: 10px;
+}
 
 .timer {
   display: flex;
   justify-content: center;
+  margin-top: 15vh;
 }
 
 .display-words {
   height: 90px;
   width: 500px;
   border-radius: 20px;
+  margin-top: 15vh;
 }
 
 .display-countdown {
@@ -149,6 +154,7 @@ input[type=number] {
 .play-pause-btn {
   width: 60px;
   height: 60px;
+  margin-left: 10px;
 }
 .play-pause-btn img {
   height: 30px;

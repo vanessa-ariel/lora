@@ -11,6 +11,9 @@ html {
 body {
   font-family: "Roboto";
   font-weight: 300;
+}
+
+.background-index {
   background: #9f17f3;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(159, 23, 243, 0.35)), color-stop(10%, #d9b4f0), color-stop(41%, white));
   background: linear-gradient(0deg, rgba(159, 23, 243, 0.35) 0%, #d9b4f0 10%, white 41%);
@@ -68,6 +71,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  height: 260px;
 }
 
 .about h1 {
@@ -105,6 +109,7 @@ input[type="number"] {
 
 .set-timer {
   text-align: center;
+  height: 270px;
 }
 
 .set-timer__paragraph {
@@ -159,6 +164,12 @@ input[type="number"] {
   opacity: 0.5;
 }
 
+.background-page2 {
+  background-image: url("./../../img/art-art-materials-artistic-286559.jpg");
+  width: 100%;
+  height: 500px;
+}
+
 .word-generator {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,5 +218,13 @@ input[type="number"] {
 
 .play-pause-btn img {
   height: 30px;
+}
+
+footer {
+  height: 30px;
+}
+
+footer p {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

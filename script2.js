@@ -66,6 +66,5 @@ function handlePress() {
         clearInterval(counter)
     } else {
         play()
-        counter = setInterval(timer, 1000)
     }
 }

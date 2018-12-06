@@ -29,10 +29,7 @@ body {
 }
 
 .display {
-  height: 100px;
-  width: 380px;
-  border-radius: 25px;
-  background-color: #dfdfdf;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.35);
 }
 
 .navbar {
@@ -125,14 +122,23 @@ input[type=number] {
 
 .content {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .timer {
   display: flex;
   justify-content: center;
+}
+
+.display-words {
+  height: 90px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+.display-countdown {
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

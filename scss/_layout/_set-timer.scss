@@ -1,20 +1,35 @@
 .set-timer{
-    text-align: center;
-  &__paragraph{
-    padding: 1rem;
-    border: 2px solid $primary-color;
-    width: 300px;
-    margin: 0 auto 25px;
-  }
-  .input-group{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .input-hour, .input-min{
-    display: flex;
-    flex-direction: column;
-  }
+  text-align: center;
+&__paragraph{
+  padding: 1rem;
+  border: 2px solid $primary-color;
+  border-radius: 12px;
+  width: 400px;
+  margin: 0 auto 25px;
+  font-size: 1.5rem;
+}
+}
+.input-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.input-hour, .input-min{
+  display: flex;
+  flex-direction: column;
+}
+#hour, #min{
+  font-size: 5rem;
+  text-align: center;
 }
 
-
+#hour::-webkit-inner-spin-button, #min::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.dot {
+  position: relative;
+  top: 15px;
+  font-size: 5rem;
+  opacity: 0.5;
+}

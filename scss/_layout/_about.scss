@@ -10,18 +10,20 @@
     max-width: 40vw;
     display: flex;
     justify-content: space-between;
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+  &__text{
+    margin: 40px 0 50px;
   }
   &__illustration{
-    width: 20rem;
+    width: 15rem;
     object-fit: contain;
   }
 }
 input[type="number"]{
-  color: transparent;
   border: none;
   width: 100px;
   height: 100px;
-  background-color: orange;
+  background-color: rgb(226, 224, 220);
   border-radius: 25px;
 }

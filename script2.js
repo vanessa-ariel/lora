@@ -1,32 +1,60 @@
+// WORD GENERATOR
+const randomWords = [
+    "palavra1",
+    "palavra2",
+    "palavra3",
+    "palavra4",
+    "palavra5",
+]
+
+document.body.onkeyup = function(e){
+    if(e.keyCode === 32){
+        const index = Math.floor(Math.random() * ((randomWords.length - 1) - 0 + 1)) + 0;
+        const selectedWord = randomWords[index];
+        const displayWords = document.querySelector('.display-words');
+        displayWords.innerHTML = selectedWord;
+    }
+}
+
 // TIMER
 let hourInput = document.getElementById('hour')
 let minInput = document.getElementById('min')
+let isPlaying = false;
 
-const timerCountdown = document.querySelector('.timer-countdown')
+const timerCountdown = document.querySelector('.display-countdown');
 
-
-var c = localStorage.getItem('timer');
-var parsedHour = JSON.parse(c);
+let c = localStorage.getItem('timer');
+let parsedHour = JSON.parse(c);
 console.log(parsedHour)
 
 timerCountdown.innerHTML = parsedHour.hora + ":" + parsedHour.minutos;
 
+let count =  ((parsedHour.hora * 60) * 60) + parsedHour.minutos * 60;
 
 function timer() {
-  
-    var count =  (parsedHour.hora * 60) + parsedHour.minutos;
-    var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
-    count = count - 1;
-    if (count == -1) {
-        clearInterval(counter);
-        return;
+    if(isPlaying){
+        count = count - 1;
+        if (count == -1) {
+            clearInterval(counter);
+            return;
+        }
+
+        let seconds = count % 60;
+        let minutes = Math.floor(count / 60);
+        let hours = Math.floor(minutes / 60);
+        minutes %= 60;
+        hours %= 60;
+
+        timerCountdown.innerHTML = hours + ":" + minutes + ":" + seconds;
     }
-
-    var seconds = count % 60;
-    var minutes = Math.floor(count / 60);
-    var hours = Math.floor(minutes / 60);
-    minutes %= 60;
-    hours %= 60;
-
-    timerCountdown.innerHTML = hours + ": " + minutes + ":" + seconds ; // watch for spelling
 }
+
+function play(){
+    isPlaying = true;
+}
+
+function pause() {  
+    isPlaying = false;
+}
+
+let counter = setInterval(timer, 1000);

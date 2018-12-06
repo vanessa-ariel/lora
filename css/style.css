@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
 }
 
@@ -11,7 +12,9 @@ body {
   font-family: "Roboto";
   font-weight: 300;
   background: #9f17f3;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(159, 23, 243, 0.35)), color-stop(10%, #d9b4f0), color-stop(41%, white));
   background: linear-gradient(0deg, rgba(159, 23, 243, 0.35) 0%, #d9b4f0 10%, white 41%);
+  height: 100vh;
 }
 
 .container {
@@ -30,10 +33,17 @@ body {
 .display {
   font-size: 3rem;
   color: #8517F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.35);
 }
 
 .navbar {
@@ -48,30 +58,45 @@ body {
 }
 
 .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
 }
+
 .about h1 {
   font-size: 2.8rem;
   margin-bottom: 25px;
 }
+
 .about__paragraph {
   max-width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 1.5rem;
 }
+
 .about__text {
   margin: 15px 0 50px;
 }
+
 .about__illustration {
   width: 15rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-input[type=number] {
+input[type="number"] {
   border: none;
   width: 90px;
   height: 90px;
@@ -81,6 +106,7 @@ input[type=number] {
 .set-timer {
   text-align: center;
 }
+
 .set-timer__paragraph {
   padding: 1rem;
   border-radius: 12px;
@@ -90,14 +116,26 @@ input[type=number] {
 }
 
 .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .input-hour, .input-min {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 2rem;
 }
 
@@ -105,7 +143,8 @@ input[type=number] {
   font-size: 5rem;
   text-align: center;
   margin-bottom: 10px;
-  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.35);
 }
 
 #hour::-webkit-inner-spin-button, #min::-webkit-outer-spin-button {
@@ -121,20 +160,29 @@ input[type=number] {
 }
 
 .word-generator {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .content {
   text-align: center;
 }
+
 .content h1, .content p {
   margin-top: 10px;
 }
 
 .timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 15vh;
 }
 
@@ -156,8 +204,8 @@ input[type=number] {
   height: 60px;
   margin-left: 10px;
 }
+
 .play-pause-btn img {
   height: 30px;
 }
-
 /*# sourceMappingURL=style.css.map */

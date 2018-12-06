@@ -17,6 +17,7 @@
 .input-hour, .input-min{
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 #hour, #min{
   font-size: 5rem;

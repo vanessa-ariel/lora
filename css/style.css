@@ -25,10 +25,14 @@ body {
   width: 210px;
   height: 40px;
   color: #fff;
-  margin-top: 2rem;
 }
 
 .display {
+  font-size: 3rem;
+  color: #8517F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.35);
 }
 
@@ -94,6 +98,7 @@ input[type=number] {
 .input-hour, .input-min {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 #hour, #min {
@@ -139,6 +144,14 @@ input[type=number] {
   width: 250px;
   height: 60px;
   border-radius: 10px;
+}
+
+.play-pause-btn {
+  width: 60px;
+  height: 60px;
+}
+.play-pause-btn img {
+  height: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

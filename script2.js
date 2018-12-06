@@ -35,7 +35,7 @@ let count =  ((parsedHour.hora * 60) * 60) + parsedHour.minutos * 60
 
 function setTimerValue(hora, minutos, segundos = '00') {
     const timerCountdown = document.querySelector('.display-countdown')
-    timerCountdown.innerHTML = hora.toString().padStart(2, '0') + ":" + minutos + ":" + segundos
+    timerCountdown.innerHTML = hora.toString().padStart(2, '0') + ":" + minutos.toString().padStart(2, '0') + ":" + segundos.toString().padStart(2, '0')
 }
 
 setTimerValue(parsedHour.hora, parsedHour.minutos);
@@ -74,6 +74,7 @@ function handlePress() {
     if (isPlaying) {
         pause()
         clearInterval(counter)
+        
     } else {
         play()
         counter = setInterval(timer, 1000)

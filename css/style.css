@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  width: 80vw;
+  width: 60vw;
 }
 
 .btn {
@@ -52,6 +52,7 @@ body {
 }
 .about h1 {
   font-size: 2.8rem;
+  margin-bottom: 25px;
 }
 .about__paragraph {
   max-width: 40vw;
@@ -60,7 +61,7 @@ body {
   font-size: 1.5rem;
 }
 .about__text {
-  margin: 40px 0 50px;
+  margin: 15px 0 50px;
 }
 .about__illustration {
   width: 15rem;
@@ -69,10 +70,10 @@ body {
 
 input[type=number] {
   border: none;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   background-color: #e2e0dc;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 .set-timer {
@@ -80,7 +81,6 @@ input[type=number] {
 }
 .set-timer__paragraph {
   padding: 1rem;
-  border: 2px solid #8517F3;
   border-radius: 12px;
   width: 400px;
   margin: 0 auto 25px;
@@ -101,6 +101,7 @@ input[type=number] {
 #hour, #min {
   font-size: 5rem;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 #hour::-webkit-inner-spin-button, #min::-webkit-outer-spin-button {

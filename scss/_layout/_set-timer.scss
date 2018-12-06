@@ -2,7 +2,7 @@
   text-align: center;
 &__paragraph{
   padding: 1rem;
-  border: 2px solid $primary-color;
+  // border: 2px solid $primary-color;
   border-radius: 12px;
   width: 400px;
   margin: 0 auto 25px;
@@ -21,6 +21,7 @@
 #hour, #min{
   font-size: 5rem;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 #hour::-webkit-inner-spin-button, #min::-webkit-outer-spin-button { 

@@ -29,7 +29,8 @@ body {
   border-radius: 30px;
   width: 210px;
   height: 40px;
-  color: #fff; }
+  color: #fff;
+  font-size: 1.5rem; }
 
 .display {
   font-size: 3rem;
@@ -47,8 +48,7 @@ body {
   width: 100%;
   margin: 0;
   font-size: 3rem;
-  font-weight: 300;
-  margin-bottom: 5vh; }
+  font-weight: 300; }
 
 .about {
   display: flex;
@@ -82,9 +82,9 @@ input[type="number"] {
   .set-timer__paragraph {
     padding: 1rem;
     border-radius: 12px;
-    width: 400px;
     margin: 0 auto 25px;
-    font-size: 1.5rem; }
+    font-size: 1.6rem;
+    font-weight: 700; }
 
 .input-group {
   display: flex;
@@ -102,7 +102,7 @@ input[type="number"] {
   margin-bottom: 10px;
   box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.35); }
 
-#hour::-webkit-inner-spin-button, #min::-webkit-outer-spin-button {
+#hour::-webkit-inner-spin-button, #min::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 

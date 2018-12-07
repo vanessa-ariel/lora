@@ -1,9 +1,12 @@
 footer{
-    height: 30px;
+    height: 35px;
     width: 100vw;
     text-align: center;
     background-color: $primary-color;
     position: absolute;
     bottom: 0;
     font-size: 1.5rem;
+    p{
+        margin-top: 10px;
+    }
 }

@@ -14,6 +14,16 @@
   justify-content: center;
   margin-top: 15vh;
 }
+.voltar-timer{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 110px;
+  a{  
+    text-decoration: none;
+    font-weight: 700;
+    color: $primary-color;
+  }
+}
 
 .display-words{
   height: 90px;
@@ -21,16 +31,39 @@
   border-radius: 20px;
   margin-top: 15vh;
 }
-.display-countdown{
+.display-countdown {
   width: 250px;
   height: 60px;
   border-radius: 10px;
 }
-.play-pause-btn{
+
+.play-pause-btn {
   width: 60px;
   height: 60px;
   margin-left: 10px;
-  img{
-    height: 30px;
-  }
+  background-image: url(../img/play.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 18px;
+}
+
+.pause-btn{
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  background-image: url(../img/pause.png);
+  // background-color: rgb(166, 77, 250);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 15px;
+}
+
+footer {
+  height: 30px;
+  width: 100vw;
+  text-align: center;
+  background-color: $primary-color;
+  position: absolute;
+  bottom: 0;
+  font-size: 1.5rem;
 }

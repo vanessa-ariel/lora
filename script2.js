@@ -1,10 +1,11 @@
 // WORD GENERATOR
 const randomWords = [
-    "palavra1",
-    "palavra2",
-    "palavra3",
-    "palavra4",
-    "palavra5",
+    "Cena de filme",
+    "Uma flor",
+    "Uma heroína",
+    "Algo pequeno",
+    "Um sonho",
+    "Seu humor",
 ]
 function getWord(){
     const index = Math.floor(Math.random() * ((randomWords.length - 1) - 0 + 1)) + 0;
@@ -74,9 +75,15 @@ function handlePress() {
     if (isPlaying) {
         pause()
         clearInterval(counter)
+        const button =  document.querySelector('#btn-timer')
+        // button.classList.remove('.play-pause-btn')
+        button.className = "play-pause-btn btn"
+        console.log(button)
         
     } else {
         play()
         counter = setInterval(timer, 1000)
+        const button =  document.querySelector('#btn-timer')
+        button.className = "pause-btn btn"
     }
 }

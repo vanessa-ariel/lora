@@ -15,7 +15,7 @@ body {
   height: 100vh; }
 
 .background-page2 {
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/background.png");
   background-size: cover;
   width: 100%;
   min-height: 100vh; }
@@ -49,6 +49,9 @@ body {
   margin: 0;
   font-size: 3rem;
   font-weight: 300; }
+  .navbar__paragraph {
+    margin-left: 50px;
+    font-family: 'Berkshire Swash', cursive; }
 
 .about {
   display: flex;

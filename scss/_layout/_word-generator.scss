@@ -16,10 +16,10 @@
 }
 .voltar-timer{
   a{  
+    margin-right: 60px;
     text-decoration: none;
     font-weight: 700;
     color: $primary-color;
-    text-align: center;
   }
 }
 
@@ -27,7 +27,7 @@
   height: 90px;
   width: 300px;
   border-radius: 20px;
-  margin: 9rem auto;
+  margin: 9rem auto 2.5rem;
 }
 .display-countdown {
   width: 250px;

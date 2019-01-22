@@ -123,20 +123,17 @@ input[type="number"] {
   justify-content: center;
   margin-top: 15vh; }
 
-.voltar-timer {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 110px; }
-  .voltar-timer a {
-    text-decoration: none;
-    font-weight: 700;
-    color: #8517F3; }
+.voltar-timer a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #8517F3;
+  text-align: center; }
 
 .display-words {
   height: 90px;
-  width: 500px;
+  width: 300px;
   border-radius: 20px;
-  margin-top: 15vh; }
+  margin: 9rem auto; }
 
 .display-countdown {
   width: 250px;
@@ -161,11 +158,7 @@ input[type="number"] {
   background-repeat: no-repeat;
   background-position: 15px; }
 
-footer {
-  height: 30px;
-  width: 100vw;
-  text-align: center;
-  background-color: #8517F3;
+.footer-page1 {
   position: absolute;
   bottom: 0;
   font-size: 1.5rem; }

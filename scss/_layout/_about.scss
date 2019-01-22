@@ -1,52 +1,48 @@
-// .about{
-  
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   margin: 0 auto;
-//   height: 260px;
-
-//   h1{
-//     font-size: 2.8rem;
-//     margin-bottom: 25px;
-//   }
-//   &__paragraph{
-//     max-width: 40vw;
-//     display: flex;
-//     justify-content: space-between;
-//     font-size: 1.5rem;
-//   }
-//   &__text{
-//     margin: 15px 0 50px;
-//   }
-//   &__illustration{
-//     width: 15rem;
-//     object-fit: contain;
-//   }
-// }
-// input[type="number"]{
-//   border: none;
-//   width: 90px;
-//   height: 90px;
-//   // background-color: rgb(226, 224, 220);
-//   border-radius: 20px;
-// }
+// MOBILE FIRST 
 
 .about{
+  @include large{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 26rem;
+  }
   height: 57vh;
   margin: 0 auto;
   h1{
     font-size: 2.5rem;
     margin: 5rem 0;
+    @include large{
+        font-size: 2.8rem;
+        margin-bottom: 2.5rem;
+    }
+  }
+  &__text{
+    margin: 1.5rem 0;
+    @include large{
+      margin-top: 2rem;
+    }
   }
   &__paragraph{
     font-size: 2rem;
     text-align: left;
+    @include large{
+      max-width: 40vw;
+      display: flex;
+      justify-content: space-between;
+    }
   }
   &__illustration{
     display: block;
     max-width: 40vw;
     margin-top: 2.5rem;
     margin: 0 auto;
+    @include large{
+      width: 15rem;
+      margin-top: 9.2rem;
+    }
   }
 }
+
+

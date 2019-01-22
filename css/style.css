@@ -55,17 +55,42 @@ body {
 .about {
   height: 57vh;
   margin: 0 auto; }
+  @media (min-width: 1224px) {
+    .about {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      height: 26rem; } }
   .about h1 {
     font-size: 2.5rem;
     margin: 5rem 0; }
+    @media (min-width: 1224px) {
+      .about h1 {
+        font-size: 2.8rem;
+        margin-bottom: 2.5rem; } }
+  .about__text {
+    margin: 1.5rem 0; }
+    @media (min-width: 1224px) {
+      .about__text {
+        margin-top: 2rem; } }
   .about__paragraph {
     font-size: 2rem;
     text-align: left; }
+    @media (min-width: 1224px) {
+      .about__paragraph {
+        max-width: 40vw;
+        display: flex;
+        justify-content: space-between; } }
   .about__illustration {
     display: block;
     max-width: 40vw;
     margin-top: 2.5rem;
     margin: 0 auto; }
+    @media (min-width: 1224px) {
+      .about__illustration {
+        width: 15rem;
+        margin-top: 9.2rem; } }
 
 .set-timer {
   text-align: center;

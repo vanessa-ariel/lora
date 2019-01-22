@@ -7,7 +7,7 @@ const button = document.querySelector('.btn')
 function nextPage(){
   localStorage.setItem('timer', JSON.stringify({hora: hourInput.value, minutos: minInput.value}));
   
-  location.href = 'page2.html';
+  location.href = 'page1.html';
 }
 
 button.addEventListener('click', function(e){

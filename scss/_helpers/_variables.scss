@@ -10,3 +10,19 @@ $text-color: $gray;
 $font:'Roboto';
 
 $font-size: 10px;
+
+
+
+// BREAKPOINTS
+
+// Small phones
+$screen-sm-min:320px; 
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Small tablets (landscape view)
+$screen-md-min-land: 576px;
+
+// Large tablets and desktops
+$screen-lg-min: 1224px;

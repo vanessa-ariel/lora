@@ -11,8 +11,7 @@ body {
 
 .background-index {
   background: #9f17f3;
-  background: linear-gradient(0deg, rgba(159, 23, 243, 0.35) 0%, #d9b4f0 10%, white 41%);
-  height: 100vh; }
+  background: linear-gradient(0deg, rgba(159, 23, 243, 0.35) 0%, #d9b4f0 10%, white 41%); }
 
 .background-page2 {
   background-image: url("../img/background.png");
@@ -54,40 +53,34 @@ body {
     font-family: 'Berkshire Swash', cursive; }
 
 .about {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  height: 260px; }
+  height: 57vh;
+  margin: 0 auto; }
   .about h1 {
-    font-size: 2.8rem;
-    margin-bottom: 25px; }
+    font-size: 2.5rem;
+    margin: 5rem 0; }
   .about__paragraph {
-    max-width: 40vw;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.5rem; }
-  .about__text {
-    margin: 15px 0 50px; }
+    font-size: 2rem;
+    text-align: left; }
   .about__illustration {
-    width: 15rem;
-    object-fit: contain; }
+    display: block;
+    max-width: 40vw;
+    margin-top: 2.5rem;
+    margin: 0 auto; }
+
+.set-timer {
+  text-align: center;
+  height: 270px; }
+  .set-timer__header {
+    border-radius: 1.2rem;
+    margin: 10rem 2.5rem 4rem;
+    font-size: 2rem;
+    font-weight: 700; }
 
 input[type="number"] {
   border: none;
   width: 90px;
   height: 90px;
   border-radius: 20px; }
-
-.set-timer {
-  text-align: center;
-  height: 270px; }
-  .set-timer__paragraph {
-    padding: 1rem;
-    border-radius: 12px;
-    margin: 0 auto 25px;
-    font-size: 1.6rem;
-    font-weight: 700; }
 
 .input-group {
   display: flex;
@@ -178,14 +171,15 @@ footer {
   font-size: 1.5rem; }
 
 footer {
-  height: 35px;
+  height: 50px;
   width: 100vw;
   text-align: center;
   background-color: #8517F3;
-  position: absolute;
+  position: relative;
   bottom: 0;
-  font-size: 1.5rem; }
-  footer p {
-    margin-top: 10px; }
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 /*# sourceMappingURL=style.css.map */

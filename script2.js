@@ -6,6 +6,15 @@ const randomWords = [
     "Algo pequeno",
     "Um sonho",
     "Seu humor",
+    "Um dia chuvoso",
+    "Sua comida favorita",
+    "Algo na sua mochila",
+    "Algo que ama desenhar",
+    "Um lugar que sonha visitar",
+    "Estilo de outro artista",
+    "Um lugar especial",
+    "Seu objeto favorito",
+    "Uma lembrança inesquecível"
 ]
 function getWord(){
     const index = Math.floor(Math.random() * ((randomWords.length - 1) - 0 + 1)) + 0;

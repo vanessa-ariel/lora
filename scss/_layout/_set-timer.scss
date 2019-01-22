@@ -1,13 +1,18 @@
 .set-timer{
   text-align: center;
   height: 270px;
-&__paragraph{
-  padding: 1rem;
-  border-radius: 12px;
-  margin: 0 auto 25px;
-  font-size: 1.6rem;
+&__header{
+  border-radius: 1.2rem;
+  margin: 10rem 2.5rem 4rem;
+  font-size: 2rem;
   font-weight: 700;
 }
+}
+input[type="number"]{
+  border: none;
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
 }
 .input-group{
   display: flex;

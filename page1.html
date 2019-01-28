@@ -5,25 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lora</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Roboto:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
    
 <body>
     <div class="background-page2">
         <nav class="navbar">
             <p class="navbar__paragraph">Lora</p>
         </nav>
+        <a href="./index.html"><img class="voltar-timer" src="./img/left-arrow.png" alt="Seta para voltar ao timer"></a>
         <section class="word-generator">
             <div class="content">
                 <div class="display display-words"> Lorem Ipsum </div>
                 <h1 class="display-words__info">Pressione a barra de espaço para sortear novos temas!</h1>
                 <div class="timer">
                     <div class="display display-countdown"> 00 : 00 : 00 </div>
-                    <button id="btn-timer" onclick="handlePress()" class="play-pause-btn btn">
-                        <!-- <img src="./img/play.png" alt=""> -->
-                    </button>
+                    <button id="btn-timer" class="play-pause-btn btn"></button>
                 </div>
-                <p class="voltar-timer"><a href="./index.html">Clique aqui para voltar ao timer</a> </p>
             </div>
         </section>
         <footer class=footer-page1>
@@ -34,5 +33,4 @@
     </div>
     <script src="./script2.js"></script>
 </body>
-
 </html>

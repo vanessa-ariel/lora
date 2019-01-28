@@ -19,80 +19,70 @@ const randomWords = [
 function getWord(){
     const index = Math.floor(Math.random() * ((randomWords.length - 1) - 0 + 1)) + 0;
     const selectedWord = randomWords[index];
-    const displayWords = document.querySelector('.display-words')
+    const displayWords = document.querySelector('.display-words');
     displayWords.innerHTML = selectedWord;
 }
-getWord()
+getWord();
 
 document.body.onkeyup = function(e){
+    e.preventDefault();
     if(e.keyCode === 32){
-        getWord()
+        getWord();
     }
 }
 
 // TIMER
-let hourInput = document.getElementById('hour')
-let minInput = document.getElementById('min')
-let isPlaying = false
-
-
-let c = localStorage.getItem('timer')
-let parsedHour = JSON.parse(c)
-console.log(parsedHour)
-
-
-let count =  ((parsedHour.hora * 60) * 60) + parsedHour.minutos * 60
+let hourInput = document.getElementById('hour');
+let minInput = document.getElementById('min');
+let isPlaying = false;
+let getTimerInput = localStorage.getItem('timer');
+let parsedHour = JSON.parse(getTimerInput);
+let count =  ((parsedHour.hora * 60) * 60) + parsedHour.minutos * 60;
 
 function setTimerValue(hora, minutos, segundos = '00') {
-    const timerCountdown = document.querySelector('.display-countdown')
-    timerCountdown.innerHTML = hora.toString().padStart(2, '0') + ":" + minutos.toString().padStart(2, '0') + ":" + segundos.toString().padStart(2, '0')
+    const timerCountdown = document.querySelector('.display-countdown');
+    timerCountdown.innerHTML = hora.toString().padStart(2, '0') + ":" + minutos.toString().padStart(2, '0') + ":" + segundos.toString().padStart(2, '0');
 }
 
 setTimerValue(parsedHour.hora, parsedHour.minutos);
 // timerCountdown.innerHTML = parsedHour.hora + ":" + parsedHour.minutos
-
 
 // START TIMER
 function timer() {
     if(isPlaying){
         count = count - 1;
         if (count == -1) {
-            clearInterval(counter) //duvida
+            clearInterval(counter);
             return
         }
-
-        let seconds = count % 60
-        let minutes = Math.floor(count / 60)
-        let hours = Math.floor(minutes / 60)
-        minutes %= 60
-        hours %= 60
-        setTimerValue(hours, minutes, seconds);
+        else{
+            let seconds = count % 60;
+            let minutes = Math.floor(count / 60);
+            let hours = Math.floor(minutes / 60);
+            minutes %= 60;
+            hours %= 60;
+            setTimerValue(hours, minutes, seconds);
+        }
     }
 }
 
 function play(){
-    isPlaying = true
+    isPlaying = true;
 }
-
 function pause() {  
-    isPlaying = false
+    isPlaying = false;
 }
-
 let counter;
-
-function handlePress() {
+const button =  document.querySelector('#btn-timer');
+button.addEventListener("click", function handlePress(){
     if (isPlaying) {
-        pause()
-        clearInterval(counter)
-        const button =  document.querySelector('#btn-timer')
-        // button.classList.remove('.play-pause-btn')
-        button.className = "play-pause-btn btn"
-        console.log(button)
-        
-    } else {
-        play()
-        counter = setInterval(timer, 1000)
-        const button =  document.querySelector('#btn-timer')
-        button.className = "pause-btn btn"
+        pause();
+        clearInterval(counter);
+        button.className = "play-pause-btn btn";
+    } 
+    else {
+        play();
+        counter = setInterval(timer, 1000);
+        button.className = "pause-btn btn";
     }
-}
+})

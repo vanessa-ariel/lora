@@ -14,13 +14,13 @@
   justify-content: center;
   margin-top: 15vh;
 }
-.voltar-timer{
-  a{  
-    margin-right: 60px;
-    text-decoration: none;
-    font-weight: 700;
-    color: $primary-color;
-  }
+a{
+  position: relative;
+  top: 15;
+  left: 15px;
+}
+.voltar-timer{  
+  height: 40px;
 }
 
 .display-words{
@@ -50,14 +50,12 @@
   height: 60px;
   margin-left: 10px;
   background-image: url(../img/pause.png);
-  // background-color: rgb(166, 77, 250);
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: 15px;
 }
 
 .footer-page1 {
-
   position: absolute;
   bottom: 0;
   font-size: 1.5rem;
